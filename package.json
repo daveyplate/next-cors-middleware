@@ -1,8 +1,8 @@
 {
-  "name": "@leakeddave/my-test-package",
-  "homepage": "https://github.com/LeakedDave/my-test-package",
-  "version": "1.0.5",
-  "description": "",
+  "name": "@daveyplate/next-cors-middleware",
+  "homepage": "https://github.com/daveyplate/next-cors-middleware",
+  "version": "1.0.0",
+  "description": "Middleware for Next.js to easily enable CORS",
   "module": "src/index",
   "types": "dist/index",
   "files": [
@@ -13,10 +13,19 @@
     "build": "npx tsc",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "next",
+    "next.js",
+    "middleware",
+    "cors",
+    "cross-origin"
+  ],
   "author": "LeakedDave",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "next": ">=14.0.0"
   }
 }
