@@ -1,7 +1,7 @@
 {
   "name": "@daveyplate/next-cors-middleware",
   "homepage": "https://github.com/daveyplate/next-cors-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middleware for Next.js to easily enable CORS",
   "module": "src/index",
   "types": "dist/index",
