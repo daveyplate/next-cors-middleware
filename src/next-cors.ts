@@ -5,15 +5,7 @@ const defaultCorsOptions = {
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 }
 
-/** 
- * Provides a simple way to handle CORS in Next.js
- * @param {Object} options
- * @param {NextRequest} options.request - The incoming request
- * @param {string[]} options.allowedOrigins - The list of allowed origins
- * @param {Object} [options.corsOptions] - The CORS options to include in the response
- * @returns {NextResponse} - The response to send back
- */
-export function nextCors({ request, allowedOrigins, corsOptions = defaultCorsOptions }) {
+export function nextCors({ request, allowedOrigins, corsOptions = defaultCorsOptions }: { request: NextRequest; allowedOrigins: string[]; corsOptions?: object }) {
     // Check the origin from the request
     const origin = request.headers.get('origin') ?? ''
     const isAllowedOrigin = allowedOrigins.includes(origin)
